@@ -12,6 +12,7 @@ namespace Pracownicy.Controllers
     public class EmployeeController : Controller
     {
         private readonly EmployeeContext _context;
+        public int EmployeeNumber;
 
         public EmployeeController(EmployeeContext context)
         {
@@ -21,7 +22,13 @@ namespace Pracownicy.Controllers
         // GET: Employee
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Employees.ToListAsync());
+            EmployeeNumber = _context.Employees.Count();
+
+            ViewBag.Employees = _context.Employees.ToListAsync();
+            ViewBag.EmployeeNumber = EmployeeNumber;
+
+            //return View(await _context.Employees.ToListAsync());
+            return View();
         }
 
         // GET: Employee/Details/5

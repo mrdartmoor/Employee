@@ -8827,11 +8827,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MarcinCieloch\\source\\repos\\Pracownicy\\Pracownicy.csproj",
+      "projectUniqueName": "C:\\Users\\MarcinCieloch\\Documents\\Employee\\Pracownicy.csproj",
       "projectName": "Pracownicy",
-      "projectPath": "C:\\Users\\MarcinCieloch\\source\\repos\\Pracownicy\\Pracownicy.csproj",
+      "projectPath": "C:\\Users\\MarcinCieloch\\Documents\\Employee\\Pracownicy.csproj",
       "packagesPath": "C:\\Users\\MarcinCieloch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MarcinCieloch\\source\\repos\\Pracownicy\\obj\\",
+      "outputPath": "C:\\Users\\MarcinCieloch\\Documents\\Employee\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MarcinCieloch\\AppData\\Roaming\\NuGet\\NuGet.Config",

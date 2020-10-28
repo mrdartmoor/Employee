@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e6zXAKNBGtWznZX9lp12/wxWBXXgNxXyMT5v5LI3o8a2nyyXbkRXj5PNxO2rf/3laRzu66okS1KL4cC2CcCR/Q==",
+  "dgSpecHash": "G/CIGFJ+jsxFyHUXwNO5ArFTwhllxPpIIvNKBMrg+pjgkVrS4LOOWMcvAcy2QIfEIrKVFQxAw5dzRJhKZpHnsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MarcinCieloch\\source\\repos\\Pracownicy\\Pracownicy.csproj",
+  "projectFilePath": "C:\\Users\\MarcinCieloch\\Documents\\Employee\\Pracownicy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MarcinCieloch\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\MarcinCieloch\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

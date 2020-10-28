@@ -28,24 +28,29 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in ViewBag.Employees) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.FullName)
+                @*@Html.DisplayFor(modelItem => item.FullName)*@
+                @item.FullName
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EmpCode)
+                @*@Html.DisplayFor(modelItem => item.EmpCode)*@
+                @item.EmpCode
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Position)
+                @*@Html.DisplayFor(modelItem => item.Position)*@
+                @item.Position
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.OfficeLocation)
+                @*@Html.DisplayFor(modelItem => item.OfficeLocation)*@
+                @item.OfficeLocation
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.EmployeeId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.EmployeeId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.EmployeeId">Delete</a>
+                @*@ViewBag.EmployeeNumber*@
             </td>
         </tr>
 }
