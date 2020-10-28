@@ -28,6 +28,10 @@ namespace Pracownicy.Models
 		[Column(TypeName = "varchar(100)")]
 		[DisplayName("Office Location")]
 		public string OfficeLocation { get; set; }
+
+		[Column(TypeName = "bit")]
+		[DisplayName("Is Done")]
+		public bool IsDone { get; set; }
 	}
 }
 

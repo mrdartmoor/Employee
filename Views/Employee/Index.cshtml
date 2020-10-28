@@ -30,42 +30,49 @@
                         <th>
                             @Html.DisplayNameFor(model => model.OfficeLocation)
                         </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.IsDone)
+                        </th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var item in ViewBag.Employees)
                     {
-                        <tr>
-                            <td>
-                                @*@Html.DisplayFor(modelItem => item.FullName)*@
-                                @item.FullName
-                            </td>
-                            <td>
-                                @*@Html.DisplayFor(modelItem => item.EmpCode)*@
-                                @item.EmpCode
-                            </td>
-                            <td>
-                                @*@Html.DisplayFor(modelItem => item.Position)*@
-                                @item.Position
-                            </td>
-                            <td>
-                                @*@Html.DisplayFor(modelItem => item.OfficeLocation)*@
-                                @item.OfficeLocation
-                            </td>
-                            <td>
-                                <a href="@Url.Action("Edit", "Employee", new { id = item.EmployeeId })" class="btn  btn-circle">
-                                    <i class="fas fa-pen"></i>
-                                </a>
-                                <a href="@Url.Action("Details", "Employee", new { id = item.EmployeeId })" class="btn  btn-circle">
-                                    <i class="fas fa-info"></i>
-                                </a>
-                                <a href="@Url.Action("Delete", "Employee", new { id = item.EmployeeId })" class="btn  btn-circle">
-                                    <i class="fas fa-trash"></i>
-                                </a>
-                                
-                            </td>
-                        </tr>
+                    <tr>
+                        <td>
+                            @*@Html.DisplayFor(modelItem => item.FullName)*@
+                            @item.FullName
+                        </td>
+                        <td>
+                            @*@Html.DisplayFor(modelItem => item.EmpCode)*@
+                            @item.EmpCode
+                        </td>
+                        <td>
+                            @*@Html.DisplayFor(modelItem => item.Position)*@
+                            @item.Position
+                        </td>
+                        <td>
+                            @*@Html.DisplayFor(modelItem => item.OfficeLocation)*@
+                            @item.OfficeLocation
+                        </td>
+                        <td>
+                            @*@Html.DisplayFor(modelItem => item.OfficeLocation)*@
+                            @item.IsDone
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit", "Employee", new { id = item.EmployeeId })" class="btn  btn-circle">
+                                <i class="fas fa-pen"></i>
+                            </a>
+                            <a href="@Url.Action("Details", "Employee", new { id = item.EmployeeId })" class="btn  btn-circle">
+                                <i class="fas fa-info"></i>
+                            </a>
+                            <a href="@Url.Action("Delete", "Employee", new { id = item.EmployeeId })" class="btn  btn-circle">
+                                <i class="fas fa-trash"></i>
+                            </a>
+
+                        </td>
+                    </tr>
                     }
                 </tbody>
             </table>

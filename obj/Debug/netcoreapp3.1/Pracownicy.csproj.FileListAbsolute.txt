@@ -343,3 +343,8 @@ C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\staticwebasset
 C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.dll
 C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.pdb
 C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.genruntimeconfig.cache
+C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Razor\Views\Taskers\Create.cshtml.g.cs
+C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Razor\Views\Taskers\Delete.cshtml.g.cs
+C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Razor\Views\Taskers\Details.cshtml.g.cs
+C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Razor\Views\Taskers\Edit.cshtml.g.cs
+C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Razor\Views\Taskers\Index.cshtml.g.cs
