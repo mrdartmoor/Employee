@@ -4,55 +4,92 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 class="display-4">Dashboard</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.FullName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EmpCode)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Position)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.OfficeLocation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in ViewBag.Employees) {
-        <tr>
-            <td>
-                @*@Html.DisplayFor(modelItem => item.FullName)*@
-                @item.FullName
-            </td>
-            <td>
-                @*@Html.DisplayFor(modelItem => item.EmpCode)*@
-                @item.EmpCode
-            </td>
-            <td>
-                @*@Html.DisplayFor(modelItem => item.Position)*@
-                @item.Position
-            </td>
-            <td>
-                @*@Html.DisplayFor(modelItem => item.OfficeLocation)*@
-                @item.OfficeLocation
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.EmployeeId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.EmployeeId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.EmployeeId">Delete</a>
-                @*@ViewBag.EmployeeNumber*@
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Lista zadań</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FullName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmpCode)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Position)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.OfficeLocation)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewBag.Employees)
+                    {
+                        <tr>
+                            <td>
+                                @*@Html.DisplayFor(modelItem => item.FullName)*@
+                                @item.FullName
+                            </td>
+                            <td>
+                                @*@Html.DisplayFor(modelItem => item.EmpCode)*@
+                                @item.EmpCode
+                            </td>
+                            <td>
+                                @*@Html.DisplayFor(modelItem => item.Position)*@
+                                @item.Position
+                            </td>
+                            <td>
+                                @*@Html.DisplayFor(modelItem => item.OfficeLocation)*@
+                                @item.OfficeLocation
+                            </td>
+                            <td>
+                                <a href="@Url.Action("Edit", "Employee", new { id = item.EmployeeId })" class="btn  btn-circle">
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                                <a href="@Url.Action("Details", "Employee", new { id = item.EmployeeId })" class="btn  btn-circle">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                                <a href="@Url.Action("Delete", "Employee", new { id = item.EmployeeId })" class="btn  btn-circle">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                                
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="row">
+
+
+
+    <!--Pending Requests Card Example-->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-succcess text-uppercase mb-1">Zrealizowane</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.EmployeeNumber</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-tasks fa-2x text-succcess"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

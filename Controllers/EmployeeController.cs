@@ -24,7 +24,7 @@ namespace Pracownicy.Controllers
         {
             EmployeeNumber = _context.Employees.Count();
 
-            ViewBag.Employees = _context.Employees.ToListAsync();
+            ViewBag.Employees = _context.Employees.ToList();
             ViewBag.EmployeeNumber = EmployeeNumber;
 
             //return View(await _context.Employees.ToListAsync());
