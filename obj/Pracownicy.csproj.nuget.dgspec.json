@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MarcinCieloch\\Documents\\Employee\\Pracownicy.csproj": {}
+    "C:\\Users\\Marcin\\Documents\\Employee\\Pracownicy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MarcinCieloch\\Documents\\Employee\\Pracownicy.csproj": {
+    "C:\\Users\\Marcin\\Documents\\Employee\\Pracownicy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MarcinCieloch\\Documents\\Employee\\Pracownicy.csproj",
+        "projectUniqueName": "C:\\Users\\Marcin\\Documents\\Employee\\Pracownicy.csproj",
         "projectName": "Pracownicy",
-        "projectPath": "C:\\Users\\MarcinCieloch\\Documents\\Employee\\Pracownicy.csproj",
-        "packagesPath": "C:\\Users\\MarcinCieloch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MarcinCieloch\\Documents\\Employee\\obj\\",
+        "projectPath": "C:\\Users\\Marcin\\Documents\\Employee\\Pracownicy.csproj",
+        "packagesPath": "C:\\Users\\Marcin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcin\\Documents\\Employee\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MarcinCieloch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marcin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.9, )"
@@ -83,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

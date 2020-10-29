@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
@@ -34,27 +35,18 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <CustomToolNamespace></CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resourcess\Common.pl-PL.resx">
+    <EmbeddedResource Update="Resourcess\pl\Common.pl.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <CustomToolNamespace></CustomToolNamespace>
+      <CustomToolNamespace>Resourcess</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Update="Resourcess\Common.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Common.Designer.cs</LastGenOutput>
       <CustomToolNamespace>Resourcess</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resourcess\Tasker.pl.resx">
-      <CustomToolNamespace>Resourcess</CustomToolNamespace>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Generator>PublicResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Resourcess\Tasker.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Tasker.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>Resourcess</CustomToolNamespace>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resourcess\Tasker.ru.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <CustomToolNamespace>Resourcess</CustomToolNamespace>
     </EmbeddedResource>
   </ItemGroup>

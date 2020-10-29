@@ -73,3 +73,8 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
+.vs/Pracownicy/DesignTimeBuild/.dtbcache
+.vs/Pracownicy/v16/Server/sqlite3/db.lock
+.vs/Pracownicy/v16/Server/sqlite3/storage.ide
+.vs/Pracownicy/v16/Server/sqlite3/storage.ide-shm
+.vs/Pracownicy/v16/Server/sqlite3/storage.ide-wal

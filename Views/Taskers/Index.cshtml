@@ -5,14 +5,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1 class="display-4">@Resourcess.Tasker.Title</h1>
-<p style="@ViewData["color"]">dassadasdads</p>
+<h1 class="display-4">@Resourcess.Tasker.Tasks</h1>
 <p>
     <a asp-action="Create"><buttom class="btn btn-primary"> @Resourcess.Common.Add </buttom></a>
 </p>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Lista zadań</h6>
+        <h6 class="m-0 font-weight-bold text-primary">@Resourcess.Tasker.Title</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -20,18 +19,23 @@
                 <thead>
                     <tr>
                         <th>
-                            @Html.DisplayNameFor(model => model.Name)
+                            @*@Html.DisplayNameFor(model => model.Name)*@
+                            @Resourcess.Tasker.TaskName
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Description)
+                            @*@Html.DisplayNameFor(model => model.Description)*@
+                            @Resourcess.Tasker.TaskDescription
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Date)
+                            @*@Html.DisplayNameFor(model => model.Date)*@
+                            @Resourcess.Tasker.TaskDate
                         </th>
                         @*<th>
                                 @Html.DisplayNameFor(model => model.IsDone)
                             </th>*@
-                        <th></th>
+                    <th>
+                        @Resourcess.Common.Actions
+                    </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -98,7 +102,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Przedawnione</div>
+                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">@Resourcess.Tasker.TaskExpired</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.expiredTaskNumber</div>
                     </div>
                     <div class="col-auto">
@@ -114,7 +118,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Do zrobienia</div>
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">@Resourcess.Tasker.TaskWaiting</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.NoFinishTaskNumber</div>
                     </div>
                     <div class="col-auto">
@@ -130,7 +134,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Zrealizowane</div>
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">@Resourcess.Tasker.TaskFinished</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.DoneTaskNumber</div>
                     </div>
                     <div class="col-auto">
@@ -146,7 +150,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Wszystkie</div>
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">@Resourcess.Tasker.TaskAll</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.AllTaskNumber</div>
                     </div>
                     <div class="col-auto">

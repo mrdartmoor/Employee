@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Dodaj zadanie</h1>
+<h1>@Resourcess.Common.Add</h1>
 
 <hr />
 <div class="row">
@@ -12,12 +12,12 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label class="control-label">@Resourcess.Tasker.TaskName</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
+                <label asp-for="Description" class="control-label">@Resourcess.Tasker.TaskDescription</label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
@@ -30,7 +30,7 @@
                     </span>
                 </div>*@
             <div class="form-group">
-                <label asp-for="Date" class="control-label"></label>
+                <label asp-for="Date" class="control-label">@Resourcess.Tasker.TaskDate</label>
                 <input asp-for="Date" type="date" class="form-control" value="@ViewBag.TaskNow" />
                 <span asp-validation-for="Date" class="text-danger"></span>
             </div>
@@ -39,8 +39,8 @@
                     <input class="form-check-input" asp-for="IsDone" /> @Html.DisplayNameFor(model => model.IsDone)
                 </label>
             </div>
-            <a asp-action="Index"><buttom class="btn btn-dark"> Cofnij </buttom></a>
-            <button type="submit" class="btn btn-primary">Dodaj</button>
+            <a asp-action="Index"><buttom class="btn btn-dark"> @Resourcess.Common.Back </buttom></a>
+            <button type="submit" class="btn btn-primary">@Resourcess.Common.Add</button>
         </form>
     </div>
 </div>
