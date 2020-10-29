@@ -36,20 +36,33 @@
                 <tbody>
                     @foreach (var item in ViewBag.Tasker)
                     {
+                        @if(item.Date < DateTime.Now && item.IsDone == false)
+                        {
+                            ViewData["color"] = "text-danger";
+                        }
+                        else if (item.IsDone == true)
+                        {
+                            ViewData["color"] = "text-success";
+                        }
+                        else
+                        {
+                            ViewData["color"] = "";
+                        }
                         <tr>
-                            <td>
+                            <td class="@ViewData["color"]">
                                 @*@Html.DisplayFor(modelItem => item.Name)*@
+                                dassadasdads
                                 @item.Name
                             </td>
-                            <td>
+                            <td class="@ViewData["color"]">
                                 @*@Html.DisplayFor(modelItem => item.Description)*@
                                 @item.Description
                             </td>
-                            <td>
+                            <td class="@ViewData["color"]">
                                 @*@Html.DisplayFor(modelItem => item.Date)*@
                                 @item.Date
                             </td>
-                            <td>
+                            <td class="@ViewData["color"]">
                                 @*@Html.DisplayFor(modelItem => item.IsDone)*@
                                 @item.IsDone
                             </td>
@@ -116,7 +129,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-succcess text-uppercase mb-1">Zrealizowane</div>
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Zrealizowane</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.DoneTaskNumber</div>
                     </div>
                     <div class="col-auto">

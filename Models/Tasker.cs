@@ -27,7 +27,7 @@ namespace Pracownicy.Models
 		public DateTime Date { get; set; }
 
 		[Column(TypeName = "bit")]
-		[DisplayName("Is Done")]
+		[DisplayName("Wykonano")]
 		public bool IsDone { get; set; }
 	}
 }

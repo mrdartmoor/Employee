@@ -26,6 +26,7 @@ namespace Pracownicy.Controllers
             ViewBag.DoneTaskNumber = doneTaskNumber;
             ViewBag.NoFinishTaskNumber = noFinishTaskNumber;
             ViewBag.ExpiredTaskNumber = expiredTaskNumber;
+            ViewData["color"] = "color:red"; //css style
         }
 
         public TaskersController(TaskContext context)
@@ -38,7 +39,7 @@ namespace Pracownicy.Controllers
         public async Task<IActionResult> Index()
         {
             TaskNumber();
-            ViewData["color"] = "color:red"; //css style
+            
             return View();
             //return View(await _context.Tasker.ToListAsync());
         }
