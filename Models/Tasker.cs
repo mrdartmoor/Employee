@@ -23,6 +23,7 @@ namespace Pracownicy.Models
 		public string Description { get; set; }
 
 		[Column(TypeName = "datetime")]
+		[Required(ErrorMessage = "To pole jest wymagane.")]
 		[DisplayName("Data")]
 		public DateTime Date { get; set; }
 

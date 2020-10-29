@@ -1,13 +1,14 @@
 ﻿@model IEnumerable<Pracownicy.Models.Tasker>
 
+
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1 class="display-4">Zadania</h1>
+<h1 class="display-4">@Resourcess.Tasker.Title</h1>
 <p style="@ViewData["color"]">dassadasdads</p>
 <p>
-    <a asp-action="Create"><input value="Dodaj" class="btn btn-primary" /></a>
+    <a asp-action="Create"><buttom class="btn btn-primary"> Dodaj </buttom></a>
 </p>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
@@ -27,16 +28,16 @@
                         <th>
                             @Html.DisplayNameFor(model => model.Date)
                         </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.IsDone)
-                        </th>
+                        @*<th>
+                                @Html.DisplayNameFor(model => model.IsDone)
+                            </th>*@
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var item in ViewBag.Tasker)
                     {
-                        @if(item.Date < DateTime.Now && item.IsDone == false)
+                        @if (item.Date < DateTime.Now && item.IsDone == false)
                         {
                             ViewData["color"] = "text-danger";
                         }
@@ -62,10 +63,10 @@
                                 @*@Html.DisplayFor(modelItem => item.Date)*@
                                 @item.Date
                             </td>
-                            <td class="@ViewData["color"]">
-                                @*@Html.DisplayFor(modelItem => item.IsDone)*@
-                                @item.IsDone
-                            </td>
+                            @*<td class="@ViewData["color"]">
+                                    @@Html.DisplayFor(modelItem => item.IsDone)
+                                    @item.IsDone
+                                </td>*@
                             @*<td>
                                     <a asp-action="Edit" asp-route-id="@item.TaskId">Edit</a> |
                                     <a asp-action="Details" asp-route-id="@item.TaskId">Details</a> |

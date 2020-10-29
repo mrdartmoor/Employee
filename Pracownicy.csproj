@@ -16,4 +16,20 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils" Version="3.1.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Resourcess\Tasker.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Tasker.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resourcess\Tasker.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tasker.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resourcess</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

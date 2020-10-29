@@ -4,9 +4,8 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Dodaj zadanie</h1>
 
-<h4>Tasker</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -23,13 +22,13 @@
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             @*<div class='input-group date' id='datetimepicker1'>
-                <label asp-for="Date" class="control-label"></label>
-                <input asp-for="Date" type='text' class="form-control" />
-                <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                    <span asp-validation-for="Date" class="text-danger"></span>
-                </span>
-            </div>*@
+                    <label asp-for="Date" class="control-label"></label>
+                    <input asp-for="Date" type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </span>
+                </div>*@
             <div class="form-group">
                 <label asp-for="Date" class="control-label"></label>
                 <input asp-for="Date" type="date" class="form-control" value="@ViewBag.TaskNow" />
@@ -40,22 +39,18 @@
                     <input class="form-check-input" asp-for="IsDone" /> @Html.DisplayNameFor(model => model.IsDone)
                 </label>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Dodaj" class="btn btn-primary" />
-            </div>
+            <a asp-action="Index"><buttom class="btn btn-dark"> Cofnij </buttom></a>
+            <button type="submit" class="btn btn-primary">Dodaj</button>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index"><input class="btn btn-dark" value="Cofnij" /></a>
-</div>
-<script type="text/javascript">
-         $(function () {
-             $('#datetimepicker1').datetimepicker();
-         });
-</script>
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial")
-            ;}
-}
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial")
+                  ;}
+    }

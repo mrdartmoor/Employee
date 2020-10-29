@@ -348,3 +348,5 @@ C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Razor\Views\Ta
 C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Razor\Views\Taskers\Details.cshtml.g.cs
 C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Razor\Views\Taskers\Edit.cshtml.g.cs
 C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Razor\Views\Taskers\Index.cshtml.g.cs
+C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.csproj.GenerateResource.cache
+C:\Users\MarcinCieloch\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.Resourcess.Tasker.resources

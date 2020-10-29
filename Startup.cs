@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Pracownicy.Models;
 
+
 namespace Pracownicy
 {
     public class Startup
@@ -25,6 +26,7 @@ namespace Pracownicy
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddMvc().AddViewLocalization();
 
             services.AddDbContext<EmployeeContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
@@ -57,5 +59,6 @@ namespace Pracownicy
                     pattern: "{controller=Taskers}/{action=Index}/{id?}");
             });
         }
+
     }
 }
