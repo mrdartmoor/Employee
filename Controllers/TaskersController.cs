@@ -39,6 +39,7 @@ namespace Pracownicy.Controllers
         public async Task<IActionResult> Index()
         {
             TaskNumber();
+            ViewBag.ActiveMenu = "Taskers";
             
             return View();
             //return View(await _context.Tasker.ToListAsync());
@@ -67,6 +68,7 @@ namespace Pracownicy.Controllers
         {
             DateTime TaskNow = DateTime.Now;
             ViewBag.TaskNow = TaskNow;
+            ViewBag.ActiveMenu = "Taskers";
             return View();
         }
 

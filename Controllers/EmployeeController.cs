@@ -26,7 +26,8 @@ namespace Pracownicy.Controllers
 
             ViewBag.Employees = _context.Employees.ToList();
             ViewBag.EmployeeNumber = EmployeeNumber;
-
+            ViewBag.ActiveMenu = "Employee";
+            
             //return View(await _context.Employees.ToListAsync());
             return View();
         }
