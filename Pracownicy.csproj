@@ -17,6 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Resourcess\Common.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Common.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resourcess\Tasker.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -25,9 +30,31 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Resourcess\Common.en-US.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resourcess\Common.pl-PL.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resourcess\Common.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Common.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resourcess</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resourcess\Tasker.pl.resx">
+      <CustomToolNamespace>Resourcess</CustomToolNamespace>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resourcess\Tasker.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Tasker.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resourcess</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resourcess\Tasker.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <CustomToolNamespace>Resourcess</CustomToolNamespace>
     </EmbeddedResource>
   </ItemGroup>

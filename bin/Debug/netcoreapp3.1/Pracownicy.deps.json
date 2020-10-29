@@ -302,6 +302,20 @@
         "runtime": {
           "Pracownicy.dll": {}
         },
+        "resources": {
+          "en-US/Pracownicy.resources.dll": {
+            "locale": "en-US"
+          },
+          "pl-PL/Pracownicy.resources.dll": {
+            "locale": "pl-PL"
+          },
+          "pl/Pracownicy.resources.dll": {
+            "locale": "pl"
+          },
+          "ru/Pracownicy.resources.dll": {
+            "locale": "ru"
+          }
+        },
         "compile": {
           "Pracownicy.dll": {}
         }
