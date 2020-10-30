@@ -548,7 +548,6 @@ C:\Users\Marcin\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.Views.pdb
 C:\Users\Marcin\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.csproj.CopyComplete
 C:\Users\Marcin\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.dll
 C:\Users\Marcin\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.pdb
-C:\Users\Marcin\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Marcin\Documents\Employee\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\Marcin\Documents\Employee\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\Marcin\Documents\Employee\obj\Debug\netcoreapp3.1\Pracownicy.Resourcess.pl.Common.pl.resources

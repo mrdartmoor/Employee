@@ -25,14 +25,18 @@ namespace Pracownicy
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
-            services.AddMvc().AddViewLocalization();
+            //services.AddControllersWithViews();
+            //services.AddMvc().AddViewLocalization();
 
             services.AddDbContext<EmployeeContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
 
             services.AddDbContext<TaskContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+
+            services.AddDbContext<BookCategoryDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
