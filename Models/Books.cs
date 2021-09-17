@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -27,5 +28,5 @@ namespace Pracownicy.Models
             public int CategoryId { get; set; }
             public Category Category { get; set; }
         }
-
-    }
+    
+}

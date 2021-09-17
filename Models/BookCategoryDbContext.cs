@@ -8,10 +8,18 @@ namespace Pracownicy.Models
 {
     public class BookCategoryDbContext : DbContext
     {
-            public DbSet<Book> Books { get; set; }
+        public BookCategoryDbContext()
+        {
+        }
+
+        public BookCategoryDbContext(DbContextOptions<BookCategoryDbContext> options)
+      : base(options)
+        { }
+        public DbSet<Book> Books { get; set; }
             public DbSet<Category> Categories { get; set; }
             public DbSet<BookCategory> BookCategories { get; set; }
 
+        // Specify DbSet properties etc
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<BookCategory>()
